@@ -38,18 +38,19 @@ export const venueSlice = createSlice({
   ],
   reducers: {
    
-    incrementQuantity: (state, action) => {
+    incrementQuantity: (state, action) => { //It receives an action containing the index of the item to be incremented
       const { payload: index } = action;
-      if (state[index]) {
+      if (state[index]) //first checks if the item exists in the state at the provided index.
+      {
         if (state[index].name === " Auditorium Hall (Capacity:200)" && state[index].quantity >= 3) {
-          return;        }
-        state[index].quantity++;
+          return;} //If the item exists and it's an Auditorium Hall with a quantity greater than or equal to 3, it returns early without modifying the state.
+        state[index].quantity++; //Otherwise, it increments the quantity of the item by one.
       }
     },
     decrementQuantity: (state, action) => {
       const { payload: index } = action;
-      if (state[index] && state[index].quantity > 0) {
-        state[index].quantity--;
+      if (state[index] && state[index].quantity > 0) { //It first checks if the item exists in the state at the provided index and if its quantity is greater than 0.
+        state[index].quantity--; //If both conditions are met, the quantity of the item will be decreased by one.
       }
     },
   },

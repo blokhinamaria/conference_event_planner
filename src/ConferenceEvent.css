@@ -1,3 +1,11 @@
+/* Color palette:
+dark brown (darkest) #70432e
+Mocha Mousse #a47764
+Pinkish #a97a6a
+Beige #eadacb
+Light (lightest) #f0f0f0
+
+
 /* Venue selection styles */
 .venue_container {
     text-align: center;
@@ -8,7 +16,7 @@
     justify-content: center;
     width: 80vw;
     padding: 20px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     margin-left: -180px;
     font-size: 24px;
   }
@@ -26,18 +34,18 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
+    /*border: 1px solid #eadacb;
+    border-radius: 10px;*/
+    
+    background-color: #f0f0f0;
+    color: #70432e;
     width: 300px;
   }
   .text h1{
     width: 900px;
     font-size: 40px;
-    background-color: #133b6a;
-    color: white;
+    /*backround-color: #a47764;*/
+    color: #70432e;
     width:990px;
     height: 70px;
     margin-left: 240px;
@@ -46,9 +54,11 @@
     justify-content: center;
     
   }
+
   .venue_main .text {
     font-size: 30px;
-    color: #333;
+    color: #70432e;
+    padding: 10px;
   }
   .quantity-value {
     margin: 0 10px;
@@ -77,9 +87,9 @@
     align-items: center;
     gap: 20px;
     font-size: 30px;
-    color: #333;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    color: #eadacb;
+    background-color: #a97a6a;
+    /*border-radius: 10px;*/
     padding: 10px;
     width: 400px;
     margin-top: 15px;
@@ -92,8 +102,8 @@
     align-items: center;
     gap: 20px;
     padding: 10px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
+    /*border: 1px solid lightgrey;
+    border-radius: 10px;*/
     background-color: #f9f9f9;
     color: #000;
   }
@@ -108,8 +118,8 @@
   .input-container input {
     width: 100px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
+    /*border-radius: 5px;*/
+    border: 1px solid f0f0f0;
     padding: 13px;
   }
   .meal_selection {
@@ -136,8 +146,8 @@
   .meal_item .inner input {
     width: 100px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
+    /*border-radius: 5px;*/
+    border: 1px solid f0f0f0;
     padding: 5px;
   }
   .meal_item .meal_cost {
@@ -151,7 +161,7 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
   }
   .display_box1 {
     margin-top: 20px;
@@ -188,24 +198,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5291D9;
-    color: black;
+    background-color: #a97a6a;
+    color: #f0f0f0;
     border: none;
     width: 10px;
     height: 30px;
-     border-radius: 5px;
+    /*border-radius: 5px;*/
     cursor: pointer;
   }
   .btn-warning {
-    background-color: #52D7D9;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    color: black;
+    background-color: #a97a6a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
     width: 10px;
     height: 30px;
     border: none;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     cursor: pointer;
   }
   
@@ -248,19 +258,19 @@
   .table_item_data tbody tr:first-child:hover {
     background-color: transparent;
   }
-  navbar {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    background-color:#133b6a;
-    color: white;
+    background-color:#a47764;
+    color: #eadacb;
     width: 100vw;
   }
   
   .company_logo {
     font-size: 30px;
-    color: #EFC16B;
+    color: #eadacb;
     font-weight: 700;
   }
   .nav_links{
@@ -275,33 +285,37 @@
   }
   .nav_links a {
     text-decoration: none;
-    color: white;
+    color: #eadacb;
     margin-right: 20px;
     transition: all 0.3s ease;
     font-size: 25px;
   }
   
   .nav_links a:hover {
-    color: #ff9900;
+    color: #f0f0f0;
   }
-  .button_container{
-    /* background-color: red; */
-    width:200px ;
+  .button_container {
+    width: 200px;
     display: flex;
     gap: 20px;
+    padding: 10px;
   }
   .details_button {
     padding: 8px 16px;
-    background-color: #EFC16B;
-    color: black;
-    /* border: 1px solid white; */
+    background-color: #eadacb;
+    color: #a97a6a;
+    /* border: 1px solid white; 
+    border-radius: 5px;*/
     font-size: 20px;
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     /* background-color: transparent; */
   }
   
+  .details_button:hover {
+    background-color: #70432e;
+    color: #eadacb;
+  }
   
   .navbar_event_conference{
     position: fixed;
@@ -309,18 +323,18 @@
     z-index: 99;
   }
   .btn-disabled {
-    opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+    opacity: 0.2; /* Reduce opacity to visually indicate disabled state */
     cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
   }
   @media (max-width: 700px) {
-    navbar {
+    nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 20px;
-        background-color: #133b6a;
-        color: white;
+        background-color: #a47764;
+        color: #eadacb;
         width: 100vw;
     }
     .nav_links {
